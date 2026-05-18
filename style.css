@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#canvas {
+    border-radius: 12px;
+    cursor: crosshair;
+    display: block;
+    width: 100%;
+    image-rendering: pixelated;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #111;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+}
+
+#controls input[type="range"] {
+    width: 100px;
+}
+
+.mat-btn {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    width: 55px;
+    height: 35px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.mat-btn.active {
+    border-color: white;
+    opacity: 1;
+}
+
+#clearBtn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#particleCount {
+    margin-left: auto;
+    color: #aaa;
+}

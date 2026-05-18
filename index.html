@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sand Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas" style="width:100%; image-rendering: pixelated;"></canvas>
+        <div id="controls">
+            <label>Brush <input type="range" id="brushSize" min="1" max="20" value="3"> <span id="brushVal">3</span></label>
+            <label>Material</label>
+<button class="mat-btn active" data-mat="1" style="background:#e8c76a">Sand</button>
+<button class="mat-btn" data-mat="2" style="background:#4a9eff">Water</button>
+<button class="mat-btn" data-mat="3" style="background:#888"> Stone</button>
+<button class="mat-btn" data-mat="4" style="background:#ff4422">Fire</button>
+            <button id="clearBtn">Clear</button>
+            <span id="particleCount">0 particles</span>
+        </div>
+    </div>
+    <script src="simulation.js"></script>
+</body>
+</html>
